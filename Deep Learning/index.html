@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etech - Online Learning Platform</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary-purple: #8A2BE2;
+            --light-purple: #E6E6FA;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+        }
+        
+        .bg-gradient {
+            background: linear-gradient(45deg, #8A2BE2, #FF69B4);
+        }
+        
+        .btn-custom {
+            background: linear-gradient(45deg, #8A2BE2, #FF69B4);
+            border: none;
+            color: white;
+            padding: 10px 25px;
+            border-radius: 25px;
+        }
+        
+        .search-bar {
+            background: white;
+            border-radius: 25px;
+            padding: 10px;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+        }
+        
+        .course-card {
+            border-radius: 15px;
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+        
+        .course-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .testimonial-card {
+            background: white;
+            border-radius: 15px;
+            padding: 20px;
+            margin: 10px;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+        }
+        
+        .benefit-icon {
+            width: 50px;
+            height: 50px;
+            background: var(--light-purple);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="#">Etech.</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Courses</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Teachers</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Offers</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+            </ul>
+            <div class="d-flex gap-2">
+                <button class="btn">Sign In</button>
+                <button class="btn btn-custom">Free Trial</button>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="py-5">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <h1 class="display-4 fw-bold mb-4">Develop your skills in a new and unique way</h1>
+                <p class="lead mb-4">Explore a transformative approach to skill development on our online learning platform. Discover a new realm of learning experiences and opportunities.</p>
+                <button class="btn btn-custom mb-3">Enroll now</button>
+            </div>
+            <div class="col-lg-6">
+                <img src="/api/placeholder/600/400" alt="Student learning" class="img-fluid">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Partners -->
+<div class="container mb-5">
+    <div class="row justify-content-center align-items-center g-4">
+        <div class="col-auto">
+            <img src="/api/placeholder/120/40" alt="Duolingo">
+        </div>
+        <div class="col-auto">
+            <img src="/api/placeholder/120/40" alt="Magic Leap">
+        </div>
+        <div class="col-auto">
+            <img src="/api/placeholder/120/40" alt="Microsoft">
+        </div>
+        <div class="col-auto">
+            <img src="/api/placeholder/120/40" alt="Codecov">
+        </div>
+    </div>
+</div>
+
+<!-- Search Courses -->
+<section class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">Search Courses</h2>
+        <div class="row justify-content-center">
+            <div class="col-lg-6">
+                <div class="search-bar d-flex">
+                    <input type="text" class="form-control border-0" placeholder="Search for over 50+ courses">
+                    <button class="btn btn-custom ms-2">Search</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Benefits -->
+<section class="py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <img src="/api/placeholder/500/500" alt="Students" class="img-fluid rounded-4">
+            </div>
+            <div class="col-lg-6">
+                <h2 class="mb-4">Benefits From Our Online Learning</h2>
+                <div class="d-flex flex-column gap-4">
+                    <div class="d-flex gap-3">
+                        <div class="benefit-icon">
+                            <i class="fas fa-graduation-cap text-primary"></i>
+                        </div>
+                        <div>
+                            <h5>Online Degrees</h5>
+                            <p>Learn and earn degrees from the comfort of your home.</p>
+                        </div>
+                    </div>
+                    <div class="d-flex gap-3">
+                        <div class="benefit-icon">
+                            <i class="fas fa-clock text-primary"></i>
+                        </div>
+                        <div>
+                            <h5>Short Courses</h5>
+                            <p>Perfect for quick skill development and focused learning.</p>
+                        </div>
+                    </div>
+                    <div class="d-flex gap-3">
+                        <div class="benefit-icon">
+                            <i class="fas fa-user-tie text-primary"></i>
+                        </div>
+                        <div>
+                            <h5>Training from Experts</h5>
+                            <p>Learn directly from industry experts and professionals.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Popular Courses -->
+<section class="py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center mb-5">Our Popular Courses</h2>
+        <div class="row g-4">
+            <div class="col-lg-4">
+                <div class="card course-card">
+                    <img src="/api/placeholder/400/250" class="card-img-top" alt="Web Design">
+                    <div class="card-body">
+                        <h5 class="card-title">Web Design & Development</h5>
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <span>$560.00</span>
+                            <span class="badge bg-primary">4.5</span>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <small>85 Students</small>
+                            <small>12 Lessons</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Additional course cards would go here -->
+        </div>
+    </div>
+</section>
+
+<!-- Teacher CTA -->
+<section class="py-5">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <h2>If You Are A Certified Teacher Then Become An Instructor</h2>
+                <p class="mb-4">Join our team of educators and share your expertise.</p>
+                <div class="row g-3 mb-4">
+                    <div class="col-6">
+                        <div class="d-flex align-items-center">
+                            <i class="fas fa-check-circle text-primary me-2"></i>
+                            <span>Global Impact</span>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="d-flex align-items-center">
+                            <i class="fas fa-check-circle text-primary me-2"></i>
+                            <span>Creative Freedom</span>
+                        </div>
+                    </div>
+                    <!-- Additional perks would go here -->
+                </div>
+                <button class="btn btn-custom">Become an Instructor</button>
+            </div>
+            <div class="col-lg-6">
+                <img src="/api/placeholder/500/400" alt="Teacher" class="img-fluid">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Testimonials -->
+<section class="py-5 bg-gradient text-white">
+    <div class="container">
+        <h2 class="text-center mb-5">Student's Testimonials</h2>
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="testimonial-card text-dark">
+                    <div class="d-flex align-items-center mb-3">
+                        <img src="/api/placeholder/50/50" class="rounded-circle me-3" alt="Student">
+                        <div>
+                            <h6 class="mb-0">Anna Rodriguez</h6>
+                            <small class="text-muted">Web Design Student</small>
+                        </div>
+                    </div>
+                    <p class="mb-0">"Enrolling in courses at this platform was a game-changer for my career development."</p>
+                </div>
+            </div>
+            <!-- Additional testimonials would go here -->
+        </div>
+    </div>
+</section>
+
+<!-- Newsletter -->
+<section class="py-5">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-6 text-center">
+                <h2 class="mb-4">Get In Touch!</h2>
+                <p class="mb-4">Subscribe to get information about courses and more.</p>
+                <div class="d-flex gap-2">
+                    <input type="email" class="form-control" placeholder="Enter your email">
+                    <button class="btn btn-custom">Subscribe</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-dark text-white py-5">
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-lg-3">
+                <h5 class="mb-3">Etech.</h5>
+                <p>Making a transformative education accessible to everyone.</p>
+                <div class="d-flex gap-3">
+                    <a href="#" class="text-white"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="text-white"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-white"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <h5 class="mb-3">Company</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-white-50">About Us</a></li>
+                    <li><a href="#" class="text-white-50">Careers</a></li>
+                    <li><a href="#" class="text-white-50">Press</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-3">
+                <h5 class="mb-3">Support</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-white-50">Help Center</a></li>
+                    <li><a href="#" class="text-white-50">Contact Us</a></li>
+                    <li><a href="#" class="text-white-50">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-3">
+                <h5 class="mb-3">Links</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-white-50">Courses</a></li>
+                    <li><a href="#" class="text-white-50">Teachers</a></li>
+                    <li><a href="#" class="text-white-50">Pricing</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
